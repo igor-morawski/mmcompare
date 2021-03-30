@@ -3,6 +3,14 @@
 # python cka_crosslayer.py "/tmp2/igor/LL-tSNE/features_manual/S_PUR50_epoch_126?.pkl"
 # python cka_crosslayer.py "/tmp2/igor/LL-tSNE/features_manual/S_PURS50_epoch_112?.pkl"
 
+# python cka_crosslayer.py "/tmp2/igor/LL-tSNE/features_manual/unet_S_PURS50_epoch_112?.pkl"
+# python cka_crosslayer.py "/tmp2/igor/LL-tSNE/features_manual/unet_S_PUR50_epoch_126?.pkl"
+
+# python cka_crosslayer.py "/tmp2/igor/LL-tSNE/features_manual/unet_S_PUR50_epoch_126?.pkl" --layers=3
+# python cka_crosslayer.py "/tmp2/igor/LL-tSNE/features_manual/unet_S_PURS50_epoch_112?.pkl" --layers=3
+# python cka_crosslayer.py "/tmp2/igor/LL-tSNE/features_manual/unet_pretrained?.pkl" --layers=3
+
+
 import argparse
 import os
 import os.path as op
@@ -75,7 +83,7 @@ if __name__=="__main__":
     print(results)
     fig = plt.figure()
     ax = fig.add_subplot(1, 1, 1)
-    imgplot = plt.imshow(np.flip(results, axis=1))
+    imgplot = plt.imshow(np.flip(results, axis=1),vmin=0, vmax=1)
     heatmap = "plasma"
     imgplot.set_cmap(heatmap)
     ax.set_title(op.split(args.pickled_features.replace(REPLACE_SYMBOL, ""))[-1].split(".")[0])

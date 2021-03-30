@@ -1,6 +1,20 @@
 # python compare_cka.py "/tmp2/igor/LL-tSNE/features_manual/COCO_R50_epoch_1?.pkl" "/tmp2/igor/LL-tSNE/features_manual/S_R50_epoch_121?.pkl"
 # python compare_cka.py "/tmp2/igor/LL-tSNE/features_manual/COCO_R50_epoch_1?.pkl" "/tmp2/igor/LL-tSNE/features_manual/S_PUR50_epoch_126?.pkl"
 # python compare_cka.py "/tmp2/igor/LL-tSNE/features_manual/COCO_R50_epoch_1?.pkl" "/tmp2/igor/LL-tSNE/features_manual/S_PURS50_epoch_112?.pkl"
+
+# python compare_cka.py "/tmp2/igor/LL-tSNE/features_manual/S_R50_epoch_121?.pkl" "/tmp2/igor/LL-tSNE/features_manual/S_PUR50_epoch_126?.pkl"
+# python compare_cka.py "/tmp2/igor/LL-tSNE/features_manual/S_R50_epoch_121?.pkl" "/tmp2/igor/LL-tSNE/features_manual/S_PURS50_epoch_112?.pkl"
+
+
+# python compare_cka.py "/tmp2/igor/LL-tSNE/features_manual/neck_COCO_R50_epoch_1?.pkl" "/tmp2/igor/LL-tSNE/features_manual/neck_S_R50_epoch_121?.pkl"
+# python compare_cka.py "/tmp2/igor/LL-tSNE/features_manual/neck_COCO_R50_epoch_1?.pkl" "/tmp2/igor/LL-tSNE/features_manual/neck_S_PUR50_epoch_126?.pkl"
+# python compare_cka.py "/tmp2/igor/LL-tSNE/features_manual/neck_COCO_R50_epoch_1?.pkl" "/tmp2/igor/LL-tSNE/features_manual/neck_S_PURS50_epoch_112?.pkl"
+
+# python compare_cka.py "/tmp2/igor/LL-tSNE/features_manual/neck_S_PUR50_epoch_126?.pkl" "/tmp2/igor/LL-tSNE/features_manual/neck_S_R50_epoch_121?.pkl"
+# python compare_cka.py "/tmp2/igor/LL-tSNE/features_manual/neck_S_PURS50_epoch_112?.pkl" "/tmp2/igor/LL-tSNE/features_manual/neck_S_R50_epoch_121?.pkl"
+
+# python compare_cka.py "/tmp2/igor/LL-tSNE/features_manual/unet_pretrained?.pkl" "/tmp2/igor/LL-tSNE/features_manual/unet_S_PUR50_epoch_126?.pkl" --layers=3
+# python compare_cka.py "/tmp2/igor/LL-tSNE/features_manual/unet_pretrained?.pkl" "/tmp2/igor/LL-tSNE/features_manual/unet_S_PURS50_epoch_112?.pkl" --layers=3
 import argparse
 import os
 import os.path as op
